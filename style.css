@@ -148,11 +148,13 @@ span {
 
 .dignity-product_list li:before {
     content: "";
-    width: 30px;
-    height: 30px;
+    color: white;
+    width: 32px;
+    height: 32px;
     position: absolute;
     margin-left: -40px;
-    background: url(img/Shape%203.png);
+    background: url(img/Layer%202.png) no-repeat center;
+    background-color: #445161;
 }
 
 /*Блок 4*/
@@ -209,29 +211,42 @@ figure img {
 
 .reviewes_wrapper {
     background-color: #f5f5f5;
+    padding-left: 18px;
+    padding-top: 40px;
+    padding-bottom: 27px;
+      
 }
 
 .reviewes_title {
+    padding: 0px;
+    margin: 0px;
     font-family: Arial;
     color: #445161;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
     text-align: center;
-    padding-top: 40px;
+    padding-bottom: 35px;
 }
 
 .reviewes {
     display: inline-block;
-    background-image: url(img/bg%20review.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    width: 600px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+/*    background-image: url(img/bg%20review.png);*/
+/*    background-position: right;*/
+/*    width: 700px;*/
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 24px;
 }
 
 .reviewes p {
+    width: 436px;
+    margin: 0;
+    height: 64px;
+/*    background: #ececec;*/
+    background-image: url(img/bg%20review.png);
+/*     background-repeat: no-repeat;*/
+/*    border-radius: 10px;*/
     font-family: Arial;
     color: #333333;
     font-size: 14px;
@@ -239,18 +254,22 @@ figure img {
     line-height: 18px;
     text-align: left;
     overflow: hidden;
-    padding-left: 10px;
-
+    padding-left: 27px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 41px;
 }
 
 .reviewes img {
     float: left;
-    padding-right: 20px;
-    margin-left: 50px;
+    padding-right: 16px;
+    margin-left: 32px;
 
 }
 
 .reviewes span {
+    width: auto;
+    display: block;
     font-family: Arial;
     color: #989898;
     font-style: normal;
@@ -258,8 +277,7 @@ figure img {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7.5px;
 }
 
 /*Конец Блок 5*/
@@ -267,8 +285,6 @@ figure img {
 /*Блок 6*/
 
 .buyIt_wrapper {
-    overflow: hidden;
-    position: absolute;
     width: 1280px;
 
 }
@@ -316,7 +332,6 @@ figure img {
 }
 
 .buyIt_name {
-    display: block;
     font-family: Arial;
     color: #ffffff;
     font-size: 24px;
@@ -326,7 +341,7 @@ figure img {
 }
 
 .buyIt_price {
-    display: block;
+    margin: 0;
     height: 71px;
     background: white;
     border: 1px solid #445161;
@@ -358,3 +373,68 @@ button {
 }
 
 /*Конец Блок 6*/
+
+.main_footer {
+    background: #445161;
+    overflow: hidden;
+}
+
+.contact_title {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*Форма*/
+.contanct_form {
+    margin-top: 10px;
+    margin-left: 250px;
+    width: 500px;
+    height: 300px;
+    float: left;
+}
+
+.contanct_form input {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+
+.contanct_form button {
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+/*конец Форма*/
+
+.contacts_mail {
+    margin-left: 30px;
+    display: inline-block;    
+}
+
+.contacts_mail li a {
+    display: block;
+    text-decoration: none;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contacts_mail li {
+    list-style-type: none;
+}
+
+
+.contacts_social {
+    text-decoration: none;
+}
