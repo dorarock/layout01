@@ -127,7 +127,6 @@ span {
 
 .dignity-product_list li {
     list-style-type: none;
-    /*    list-style-image: url(img/Shape%203.png);*/
     page-break-inside: avoid;
     break-inside: avoid;
     height: 100px;
@@ -139,6 +138,7 @@ span {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .dignity-product_list {
@@ -148,7 +148,213 @@ span {
 
 .dignity-product_list li:before {
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: -40px;
     background: url(img/Shape%203.png);
 }
+
+/*Блок 4*/
+/*
+.scrinshots_wrapper {
+    position: relative;
+}
+*/
+
+.scrinshots_title {
+    font-family: Arial;
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.figcaption_title {
+    font-family: Arial;
+    color: #445161;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+figcaption p {
+    font-family: Arial;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+figure img {
+    float: left;
+}
+
+.scrinshots_wrapper {
+    width: 359px;
+    height: 180px;
+    overflow: hidden;
+    padding-left: 20px;
+    float: left;
+}
+
+/*конец Блок 4*/
+
+/*Блок 5*/
+
+.reviewes_wrapper {
+    background-color: #f5f5f5;
+}
+
+.reviewes_title {
+    font-family: Arial;
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.reviewes {
+    display: inline-block;
+    background-image: url(img/bg%20review.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 600px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.reviewes p {
+    font-family: Arial;
+    color: #333333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 10px;
+
+}
+
+.reviewes img {
+    float: left;
+    padding-right: 20px;
+    margin-left: 50px;
+
+}
+
+.reviewes span {
+    font-family: Arial;
+    color: #989898;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Конец Блок 5*/
+
+/*Блок 6*/
+
+.buyIt_wrapper {
+    overflow: hidden;
+    position: absolute;
+    width: 1280px;
+
+}
+
+.buyIt_title {
+    font-family: Arial;
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.butIt_price100 {
+    width: 300px;
+    background: #445161;
+    float: left;
+    margin-left: 145px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -170px;
+}
+
+.butIt_price150 {
+    width: 300px;
+    background: #445161;
+    float: left;
+    margin-left: 45px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -70px;
+}
+
+.butIt_price200 {
+    width: 300px;
+    background: #445161;
+    float: left;
+    margin-left: 45px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 30px;
+
+}
+
+.buyIt_name {
+    display: block;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: center;
+}
+
+.buyIt_price {
+    display: block;
+    height: 71px;
+    background: white;
+    border: 1px solid #445161;
+    font-family: Arial;
+    color: #445161;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 70px;
+    text-align: center;
+}
+
+.buyIt ol {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 260px;
+    height: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/*Конец Блок 6*/
