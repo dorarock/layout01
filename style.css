@@ -1,3 +1,10 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+
 body {
     margin: 0;
     padding: 0;
@@ -214,7 +221,7 @@ figure img {
     padding-left: 18px;
     padding-top: 40px;
     padding-bottom: 27px;
-      
+
 }
 
 .reviewes_title {
@@ -231,9 +238,9 @@ figure img {
 
 .reviewes {
     display: inline-block;
-/*    background-image: url(img/bg%20review.png);*/
-/*    background-position: right;*/
-/*    width: 700px;*/
+    /*    background-image: url(img/bg%20review.png);*/
+    /*    background-position: right;*/
+    /*    width: 700px;*/
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 24px;
@@ -243,10 +250,10 @@ figure img {
     width: 436px;
     margin: 0;
     height: 64px;
-/*    background: #ececec;*/
+    /*    background: #ececec;*/
     background-image: url(img/bg%20review.png);
-/*     background-repeat: no-repeat;*/
-/*    border-radius: 10px;*/
+    /*     background-repeat: no-repeat;*/
+    /*    border-radius: 10px;*/
     font-family: Arial;
     color: #333333;
     font-size: 14px;
@@ -285,8 +292,9 @@ figure img {
 /*Блок 6*/
 
 .buyIt_wrapper {
-    width: 1280px;
-
+    width: 1280px; 
+    overflow: hidden;
+    padding-bottom: 49px;
 }
 
 .buyIt_title {
@@ -300,35 +308,22 @@ figure img {
     padding-bottom: 50px;
 }
 
+.flex_container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px [col-start]);
+    grid-gap: 45px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .butIt_price100 {
     width: 300px;
     background: #445161;
-    float: left;
-    margin-left: 145px;
     border-radius: 10px;
-    position: relative;
-    bottom: -170px;
-}
+/*    display: inline-block; */
 
-.butIt_price150 {
-    width: 300px;
-    background: #445161;
-    float: left;
-    margin-left: 45px;
-    border-radius: 10px;
-    position: relative;
-    bottom: -70px;
-}
-
-.butIt_price200 {
-    width: 300px;
-    background: #445161;
-    float: left;
-    margin-left: 45px;
-    border-radius: 10px;
-    position: relative;
-    bottom: 30px;
-
+    
+    
 }
 
 .buyIt_name {
@@ -368,8 +363,8 @@ button {
     background-color: #ffffff;
     width: 260px;
     height: 40px;
-    margin-left: 20px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 /*Конец Блок 6*/
@@ -415,7 +410,7 @@ button {
 
 .contacts_mail {
     margin-left: 30px;
-    display: inline-block;    
+    display: inline-block;
 }
 
 .contacts_mail li a {
