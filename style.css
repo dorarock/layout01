@@ -8,26 +8,30 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial;
 }
 
-main {
+.container {
     width: 1280px;
     margin: 0 auto;
+    clear: both;
+    /*    border: 2px solid black;*/
 }
 
 /*Шапка страницы*/
+.main-header__wrapper {
+    float: left;
+}
 
 .main-header {
-    height: 323px;
-    display: flex;
-    justify-content: space-between;
+    min-height: 323px;
+    width: 100%;
     padding: 50px;
+    box-sizing: border-box;
     background-color: #445162;
 }
 
 .main-header__title {
-    /* text-transform: capitalize; */
-    font-family: Arial;
     color: #ffffff;
     font-size: 60px;
     font-weight: 400;
@@ -35,9 +39,8 @@ main {
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
-.main-header__list {
-    margin: 51px 0 0 0;
-    font-family: Arial;
+.main-header__list li a {
+    text-decoration: none;
     color: #ffffff;
     font-size: 20px;
     font-weight: 400;
@@ -48,14 +51,27 @@ main {
 
 .main-header__list {
     list-style-type: none;
-    list-style-image: url("img/check%20icon%20(1).png");
+    /*    list-style-image: url("img/check%20icon%20(1).png");*/
 }
 
+.main-header__list li a:before {
+    content: "";
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 7px;
+    background: url("img/check%20icon%20(1).png") no-repeat center;
+}
+
+
 .main-header__photo {
+    display: block;
     background-color: #ffffff;
     width: 469px;
     height: 214px;
-    padding: 50px;
+    float: right;
+
 }
 
 /*конец Шапка страницы*/
@@ -63,40 +79,43 @@ main {
 /*Блок 1*/
 
 .about-product {
-    width: 1280px;
+    width: 100%;
+    overflow: hidden;
 }
 
-.about-product_text {
+.about-product_wrapper {
     padding-left: 50px;
-    padding-top: 49px;
+    margin-top: 49px;
+    margin-bottom: 50px;
 }
 
-.about-product_text p,
-span {
-    width: 654px;
-    display: inline-block;
-}
-
-.about-product_text h1 {
-    font-family: Arial;
+.about-product_wrapper h1 {
+    margin: 0;
+    padding: 0;
     color: #445161;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
     text-align: left;
+    margin-bottom: 30px;
 }
 
-.about-product_text p {
-    font-family: Arial;
+.about-product_wrapper p {
+    margin: 0;
+    padding: 0;
+    width: 653px;
+    display: inline-block;
     color: #333333;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    margin-bottom: 20px;
 }
 
 
 .about-product__photo {
+    display: block;
     background-color: #445161;
     width: 430px;
     height: 245px;
@@ -104,12 +123,14 @@ span {
     margin-right: 50px;
 }
 
+/*
 .clr {
     width: 0;
     height: 0;
     margin: 0 auto;
     clear: both;
 }
+*/
 
 /*Конец Блок 1*/
 
@@ -117,7 +138,6 @@ span {
 
 .dignity-product {
     width: 1280px;
-    /*    height: 323px;*/
     background: #f5f5f5;
     position: relative;
 }
@@ -136,7 +156,6 @@ span {
     list-style-type: none;
     page-break-inside: avoid;
     break-inside: avoid;
-    height: 100px;
     font-family: Arial;
     color: #333333;
     font-size: 16px;
@@ -145,7 +164,6 @@ span {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 10px;
-    position: relative;
 }
 
 .dignity-product_list {
@@ -165,11 +183,11 @@ span {
 }
 
 /*Блок 4*/
-/*
-.scrinshots_wrapper {
-    position: relative;
+.scrinshots {
+    overflow: hidden;
+    padding-bottom: 20px;
 }
-*/
+
 
 .scrinshots_title {
     font-family: Arial;
@@ -178,7 +196,6 @@ span {
     font-weight: 400;
     line-height: 36px;
     text-align: center;
-    margin-top: 50px;
 }
 
 
@@ -206,7 +223,7 @@ figure img {
 
 .scrinshots_wrapper {
     width: 359px;
-    height: 180px;
+    min-height: 180px;
     overflow: hidden;
     padding-left: 20px;
     float: left;
@@ -249,7 +266,7 @@ figure img {
 .reviewes p {
     width: 436px;
     margin: 0;
-    height: 64px;
+    min-height: 64px;
     /*    background: #ececec;*/
     background-image: url(img/bg%20review.png);
     /*     background-repeat: no-repeat;*/
@@ -292,7 +309,7 @@ figure img {
 /*Блок 6*/
 
 .buyIt_wrapper {
-    width: 1280px; 
+    width: 1280px;
     overflow: hidden;
     padding-bottom: 49px;
 }
@@ -320,10 +337,6 @@ figure img {
     width: 300px;
     background: #445161;
     border-radius: 10px;
-/*    display: inline-block; */
-
-    
-    
 }
 
 .buyIt_name {
@@ -370,66 +383,144 @@ button {
 /*Конец Блок 6*/
 
 .main_footer {
+    width: 100%;
+    min-height: 509px;
     background: #445161;
     overflow: hidden;
+    margin: 0px;
+    padding: 0px;
 }
 
 .contact_title {
-    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
     color: #ffffff;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 53px;
 }
-
-/*Форма*/
-.contanct_form {
-    margin-top: 10px;
-    margin-left: 250px;
-    width: 500px;
-    height: 300px;
-    float: left;
-}
-
-.contanct_form input {
-    width: 500px;
-    height: 40px;
-    margin-bottom: 15px;
-}
-
-
-.contanct_form button {
-    width: 140px;
-    height: 40px;
-    margin-top: 20px;
-}
-
-/*конец Форма*/
 
 .contacts_mail {
-    margin-left: 30px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 40px;
+    margin-top: 20px;
     display: inline-block;
+
+
 }
 
-.contacts_mail li a {
-    display: block;
+.contacts_mail a {
     text-decoration: none;
-    font-family: Arial;
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    text-align: left;
-    margin-bottom: 20px;
 }
 
 .contacts_mail li {
+    padding-bottom: 20px;
     list-style-type: none;
 }
 
+.contacts_mail li a:before {
+    content:"";
+    position: absolute;
+    margin-left: -30px;
+    width: 24px;
+    height: 26px;
+    background-image: url(img/skype%20icon.png);
+}
 
-.contacts_social {
-    text-decoration: none;
+
+.Socialico a {
+    display: inline-block;
+    font-family: "Socialico";
+    font-size: 60px;
+    font-weight: 400;
+
+}
+
+/*Форма*/
+.contanct_form {
+    width: 500px;
+    height: 300px;
+    padding-top: 31px;
+    padding-left: 249px;
+    float: left;
+}
+
+.name {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.email {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.your_message {
+    width: 500px;
+    height: 170px;
+}
+
+.send {
+    width: 140px;
+    height: 40px;
+    margin-top: 21px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 180px;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #445162;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #445162;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #445162;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #445162;
+}
+
+/*конец Форма*/
+
+.small_footer {
+    background: #f5f5f5;
+    text-align: center;
+    color: #445162;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+}
+
+
+/*ШРИФТ*/
+
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+    font-family: "Socialico";
+    src: url("Socialico.eot?") format("eot"), url("Socialico.woff") format("woff"), url("Socialico.ttf") format("truetype"), url("Socialico.svg#Socialico") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
