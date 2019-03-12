@@ -49,21 +49,27 @@ body {
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
-.main-header__list {
-    list-style-type: none;
-    /*    list-style-image: url("img/check%20icon%20(1).png");*/
+.main-header__list li a:hover {
+    opacity: 0.3;
 }
 
-.main-header__list li a:before {
+.main-header__list a:visited {
+    color: grey;
+}
+
+.main-header__list {
+    list-style-type: none;
+}
+
+.main-header__list li:before {
     content: "";
     width: 25px;
     height: 19px;
     position: absolute;
     margin-left: -35px;
     margin-top: 7px;
-    background: url("img/check%20icon%20(1).png") no-repeat center;
+    background: url("/img/checkicon.png") no-repeat center;
 }
-
 
 .main-header__photo {
     display: block;
@@ -139,7 +145,6 @@ body {
 .dignity-product {
     width: 1280px;
     background: #f5f5f5;
-    position: relative;
 }
 
 .dignity-product_title {
@@ -178,7 +183,7 @@ body {
     height: 32px;
     position: absolute;
     margin-left: -40px;
-    background: url(img/Layer%202.png) no-repeat center;
+    background: url(/img/Layer.png) no-repeat center;
     background-color: #445161;
 }
 
@@ -268,7 +273,8 @@ figure img {
     margin: 0;
     min-height: 64px;
     /*    background: #ececec;*/
-    background-image: url(img/bg%20review.png);
+    background-image: url(/img/bgreview.png);
+    background-repeat: no-repeat;
     /*     background-repeat: no-repeat;*/
     /*    border-radius: 10px;*/
     font-family: Arial;
@@ -371,6 +377,8 @@ figure img {
 }
 
 button {
+    outline: none;
+    text-transform: uppercase;
     display: inline-block;
     border-radius: 5px;
     background-color: #ffffff;
@@ -378,6 +386,15 @@ button {
     height: 40px;
     margin-bottom: 10px;
     margin-left: 20px;
+}
+
+.buy_button {
+    text-decoration: none;
+    color: #445161;
+}
+
+.buy_button:hover {
+    opacity: 0.5;
 }
 
 /*Конец Блок 6*/
@@ -389,6 +406,7 @@ button {
     overflow: hidden;
     margin: 0px;
     padding: 0px;
+    padding-bottom: 10px;
 }
 
 .contact_title {
@@ -408,8 +426,6 @@ button {
     margin-left: 40px;
     margin-top: 20px;
     display: inline-block;
-
-
 }
 
 .contacts_mail a {
@@ -425,23 +441,65 @@ button {
     list-style-type: none;
 }
 
-.contacts_mail li a:before {
-    content:"";
-    position: absolute;
-    margin-left: -30px;
-    width: 24px;
-    height: 26px;
-    background-image: url(img/skype%20icon.png);
+.contacts_mail li a:hover {
+    opacity: 0.3;
 }
 
+.contacts_mail li a:visited {
+    color: grey;
+}
+
+.contacts_mail ul li:first-child:before {
+    content: "";
+    position: absolute;
+    margin-left: -35px;
+    width: 24px;
+    height: 26px;
+    background-image: url(/img/skypeicon.png);
+}
+
+.contacts_mail ul li:nth-child(2):before {
+    content: "";
+    position: absolute;
+    margin-left: -35px;
+    width: 26px;
+    height: 26px;
+    background-image: url(/img/icqicon.png);
+}
+
+.contacts_mail ul li:nth-child(3):before {
+    content: "";
+    position: absolute;
+    margin-left: -35px;
+    width: 22px;
+    height: 22px;
+    background-image: url(/img/emailicon.png);
+}
+
+.contacts_mail ul li:nth-child(4):before {
+    content: "";
+    position: absolute;
+    margin-left: -35px;
+    width: 24px;
+    height: 23px;
+    background-image: url(/img/phoneicon.png);
+}
 
 .Socialico a {
     display: inline-block;
     font-family: "Socialico";
     font-size: 60px;
     font-weight: 400;
-
 }
+
+.Socialico a:hover {
+    opacity: 0.3;
+}
+
+.Socialico a:visited {
+    color: grey;
+}
+
 
 /*Форма*/
 .contanct_form {
@@ -453,6 +511,8 @@ button {
 }
 
 .name {
+    border-radius: 6px;
+    outline: none;
     width: 500px;
     height: 40px;
     margin-bottom: 15px;
@@ -460,6 +520,8 @@ button {
 }
 
 .email {
+    border-radius: 6px;
+    outline: none;
     width: 500px;
     height: 40px;
     margin-bottom: 15px;
@@ -467,11 +529,16 @@ button {
 }
 
 .your_message {
+    border-radius: 6px;
+    outline: none;
     width: 500px;
     height: 170px;
 }
 
 .send {
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 6px;
     width: 140px;
     height: 40px;
     margin-top: 21px;
@@ -480,26 +547,47 @@ button {
     font-weight: 700;
     line-height: 24px;
     margin-left: 180px;
+
 }
 
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #445162;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
     color: #445162;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 :-ms-input-placeholder {
     /* IE 10+ */
     color: #445162;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 :-moz-placeholder {
     /* Firefox 18- */
     color: #445162;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 /*конец Форма*/
@@ -517,7 +605,8 @@ button {
 
 /*ШРИФТ*/
 
-/* @font-face kit by Fonts2u (https://fonts2u.com) */
+
+
 @font-face {
     font-family: "Socialico";
     src: url("Socialico.eot?") format("eot"), url("Socialico.woff") format("woff"), url("Socialico.ttf") format("truetype"), url("Socialico.svg#Socialico") format("svg");
