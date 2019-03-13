@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Верстка макета</title>
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-<!--    <link rel="stylesheet" href="/css/normalize.css">-->
 </head>
 
 <body>
@@ -27,14 +27,14 @@
             <section class="about-product">
                 <div class="about-product_wrapper">
                     <img class="about-product__photo" src="#" alt="video">
-                    <h1><a name="About_product">About your product</a></h1>
+                    <h1 id="About_product">About your product</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae vero cumque rem aspernatur asperiores dignissimos dolor rem aspernatur asperiores dignissimos dolor rem aspernatur asperiores dignissimos dolor</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis laborum voluptate ullam aspernatur nisi accusamus dolor commodi veritatis tenetur officiis.rem aspernatur asperiores dignissimos dolor</p>
                 </div>
             </section>
 
             <section class="dignity-product">
-                <h1 class="dignity-product_title"><a name="Dignity_product"> Dignity and pluses product</a></h1>
+                <h1 class="dignity-product_title" id="Dignity_product"> Dignity and pluses product</h1>
                 <ul class="dignity-product_list">
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem vitae repellendus quis voluptate natus impedit. Laborum ipsam explicabo autem corporis omnis. Vero dolores, in odio itaque voluptatibus a autem, explicabo.</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus illum quo, itaque libero ipsum natus, qui veritatis repellat neque repellendus quidem desbitis ea reiciendis nostrum consequuntur? Corrupti quidem tenetur vel!</li>
@@ -47,7 +47,7 @@
             </section>
 
             <section class="scrinshots">
-                <h1 class="scrinshots_title"><a name="Scrinshots">Scrinshots</a></h1>
+                <h1 class="scrinshots_title" id="Scrinshots">Scrinshots</h1>
                 <figure>
                     <img src="img/image.jpg" alt="Scrinshots" width="200" height="150">
                     <figcaption class="scrinshots_wrapper">
@@ -110,7 +110,7 @@
             <section>
                 <div class="buyIt_wrapper">
                     <div class="buyIt">
-                        <h1 class="buyIt_title"><a name="Price">Buy it now</a></h1>
+                        <h1 class="buyIt_title" id="Price">Buy it now</h1>
                         <div class="flex_container">
                             <div class="butIt_price100">
                                 <h2 class="buyIt_name">Standart</h2>
@@ -169,7 +169,7 @@
                     <form action="" class="contanct_form">
                         <input type="text" placeholder="Your name:" class="name"> <br>
                         <input type="text" placeholder="Your email:" class="email"> <br>
-                        <input type="textarea" placeholder="Your message:" class="your_message"> <br>
+                        <textarea placeholder="Your message:" class="your_message" cols="200" rows="200"></textarea><br>
                         <input type="button" value="send" class="send">
                     </form>
                 <div class="contacts_mail">
