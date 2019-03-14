@@ -183,7 +183,7 @@ body {
     height: 32px;
     position: absolute;
     margin-left: -40px;
-    background: url(/img/Layer.png) no-repeat center;
+    background: url(../img/Layer.png) no-repeat center;
     background-color: #445161;
 }
 
