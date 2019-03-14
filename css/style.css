@@ -68,7 +68,7 @@ body {
     position: absolute;
     margin-left: -35px;
     margin-top: 7px;
-    background: url("/img/checkicon.png") no-repeat center;
+    background: url("../img/checkicon.png") no-repeat center;
 }
 
 .main-header__photo {
@@ -299,7 +299,7 @@ figure img {
     margin-top: 11px;
     width: 13px;
     height: 25px;
-    background-image: url(/img/arrow.png);
+    background-image: url(../img/arrow.png);
 }
 
 .reviewes img {
@@ -468,7 +468,7 @@ button {
     margin-left: -35px;
     width: 24px;
     height: 26px;
-    background-image: url(/img/skypeicon.png);
+    background-image: url(../img/skypeicon.png);
 }
 
 .contacts_mail ul li:nth-child(2):before {
@@ -477,7 +477,7 @@ button {
     margin-left: -35px;
     width: 26px;
     height: 26px;
-    background-image: url(/img/icqicon.png);
+    background-image: url(../img/icqicon.png);
 }
 
 .contacts_mail ul li:nth-child(3):before {
@@ -486,7 +486,7 @@ button {
     margin-left: -35px;
     width: 22px;
     height: 22px;
-    background-image: url(/img/emailicon.png);
+    background-image: url(../img/emailicon.png);
 }
 
 .contacts_mail ul li:nth-child(4):before {
@@ -495,7 +495,7 @@ button {
     margin-left: -35px;
     width: 24px;
     height: 23px;
-    background-image: url(/img/phoneicon.png);
+    background-image: url(../img/phoneicon.png);
 }
 
 .Socialico a {
