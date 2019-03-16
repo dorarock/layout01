@@ -1,10 +1,3 @@
-/*
-* {
-    margin: 0;
-    padding: 0;
-}
-*/
-
 body {
     margin: 0;
     padding: 0;
@@ -14,8 +7,6 @@ body {
 .container {
     width: 1280px;
     margin: 0 auto;
-    clear: both;
-    /*    border: 2px solid black;*/
 }
 
 /*Шапка страницы*/
@@ -50,10 +41,10 @@ body {
 }
 
 .main-header__list li a:hover {
-    opacity: 0.3;
+    opacity: 0.7;
 }
 
-.main-header__list a:visited {
+.main-header__list li a:visited {
     color: grey;
 }
 
@@ -77,7 +68,6 @@ body {
     width: 469px;
     height: 214px;
     float: right;
-
 }
 
 /*конец Шапка страницы*/
@@ -95,7 +85,7 @@ body {
     margin-bottom: 50px;
 }
 
-.about-product_wrapper h1 {
+.about-product_wrapper h2 {
     margin: 0;
     padding: 0;
     color: #445161;
@@ -119,24 +109,14 @@ body {
     margin-bottom: 20px;
 }
 
-
-.about-product__photo {
+.about-product__video {
     display: block;
     background-color: #445161;
     width: 430px;
-    height: 245px;
+    height: 242px;
     float: right;
     margin-right: 50px;
 }
-
-/*
-.clr {
-    width: 0;
-    height: 0;
-    margin: 0 auto;
-    clear: both;
-}
-*/
 
 /*Конец Блок 1*/
 
@@ -183,16 +163,18 @@ body {
     height: 32px;
     position: absolute;
     margin-left: -40px;
+    margin-top: 5px;
     background: url(../img/Layer.png) no-repeat center;
     background-color: #445161;
 }
+
+/*КОНЕЦ*/
 
 /*Блок 4*/
 .scrinshots {
     overflow: hidden;
     padding-bottom: 20px;
 }
-
 
 .scrinshots_title {
     font-family: Arial;
@@ -202,7 +184,6 @@ body {
     line-height: 36px;
     text-align: center;
 }
-
 
 .figcaption_title {
     font-family: Arial;
@@ -243,7 +224,6 @@ figure img {
     padding-left: 18px;
     padding-top: 40px;
     padding-bottom: 27px;
-
 }
 
 .reviewes_title {
@@ -260,9 +240,6 @@ figure img {
 
 .reviewes {
     display: inline-block;
-    /*    background-image: url(img/bg%20review.png);*/
-    /*    background-position: right;*/
-    /*    width: 700px;*/
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 24px;
@@ -274,11 +251,6 @@ figure img {
     margin: 0;
     min-height: 121px;
     background: #ececec;
-    /*
-    background-image: url(/img/bgreview.png);
-    background-repeat: no-repeat;
-*/
-    /*     background-repeat: no-repeat;*/
     border-radius: 10px;
     font-family: Arial;
     color: #333333;
@@ -302,12 +274,17 @@ figure img {
     background-image: url(../img/arrow.png);
 }
 
-.reviewes img {
+.userpic {
     float: left;
     padding-right: 16px;
     margin-left: 32px;
     margin-right: 16px;
+    width: 75px;
+    height: 75px;
+}
 
+.userpic img {
+    border-radius: 50%;
 }
 
 .reviewes span {
@@ -401,13 +378,12 @@ button {
     margin-left: 20px;
 }
 
-.buy_button {
-    text-decoration: none;
-    color: #445161;
+.buy_button:hover {
+    opacity: 0.8;
 }
 
-.buy_button:hover {
-    opacity: 0.5;
+.buy_button:active {
+    color: #445161;
 }
 
 /*Конец Блок 6*/
@@ -454,11 +430,11 @@ button {
     list-style-type: none;
 }
 
-.contacts_mail li a:hover {
+.contacts_mail ul li a:hover {
     opacity: 0.3;
 }
 
-.contacts_mail li a:visited {
+.contacts_mail ul li a:visited {
     color: grey;
 }
 
@@ -498,7 +474,9 @@ button {
     background-image: url(../img/phoneicon.png);
 }
 
+
 .Socialico a {
+    text-decoration: none;
     display: inline-block;
     font-family: "Socialico";
     font-size: 60px;
@@ -508,11 +486,6 @@ button {
 .Socialico a:hover {
     opacity: 0.3;
 }
-
-.Socialico a:visited {
-    color: grey;
-}
-
 
 /*Форма*/
 .contanct_form {
@@ -528,36 +501,49 @@ button {
     text-transform: capitalize;
     border-radius: 6px;
     outline: none;
-    width: 480px;
+    width: 474px;
     height: 30px;
     margin-bottom: 15px;
     border-radius: 5px;
+    display: block;
 }
 
-.name:focus {}
+.name:focus {
+    border: 1px solid black;
+}
 
 .email {
     padding: 0px 10px 0px 10px;
     text-transform: lowercase;
     border-radius: 6px;
     outline: none;
-    width: 480px;
+    width: 474px;
     height: 30px;
     margin-bottom: 15px;
     border-radius: 5px;
+    display: block;
 }
 
-.email:focus {}
+.email:focus {
+    border: 1px solid black;
+}
 
 .your_message {
     border-radius: 6px;
     padding: 10px 10px 10px 10px;
-    display: block border-radius: 6px;
+    display: block;
+    border-radius: 6px;
     outline: none;
     width: 480px;
     height: 150px;
     resize: none;
+    border: none;
+    box-shadow: inset 0px 0px 6px 0.5px rgba(0, 0, 0, 1);
+    display: block;
+}
 
+.your_message:focus {
+    border: 1px solid black;
 }
 
 .send {
@@ -572,7 +558,6 @@ button {
     font-weight: 700;
     line-height: 24px;
     margin-left: 180px;
-
 }
 
 ::-webkit-input-placeholder {
@@ -627,10 +612,11 @@ button {
     line-height: 24px;
 }
 
+.validator {
+    text-align: center;
+}
 
 /*ШРИФТ*/
-
-
 
 @font-face {
     font-family: "Socialico";
