@@ -305,9 +305,8 @@ figure img {
 /*Блок 6*/
 
 .buyIt_wrapper {
-    width: 1280px;
-    overflow: hidden;
-    padding-bottom: 49px;
+    width: 100%;
+    padding-bottom: 50px;
 }
 
 .buyIt_title {
@@ -358,24 +357,33 @@ figure img {
 }
 
 .buyIt ol {
+    padding: 0;
     font-family: Arial;
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    list-style-position: inside;
+}
+
+.buyIt ol li {
+    margin: 0 0 0 20px;
+    width: 250px;
 }
 
 button {
     outline: none;
+    padding: 14px;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     border-radius: 5px;
     background-color: #ffffff;
     width: 260px;
-    height: 40px;
     margin-bottom: 10px;
     margin-left: 20px;
+    font-weight: 700;
+    box-sizing: border-box;
 }
 
 .buy_button:hover {
